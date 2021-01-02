@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="book@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.17">
+    <root id="1">
+      <ServerVersion>5.0.67</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="bbb"/>
+    <schema id="4" parent="1" name="book">
+      <Current>1</Current>
+    </schema>
+    <schema id="5" parent="1" name="hotel"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="test"/>
+    <schema id="9" parent="1" name="zsh"/>
+    <table id="10" parent="4" name="t_user"/>
+    <column id="11" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="12" parent="10" name="username">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="10" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(32)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="10" name="email">
+      <Position>4</Position>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <key id="15" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
